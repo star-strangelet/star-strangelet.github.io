@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>converter</title>
+    <link rel="stylesheet" href="UC.css" />
+
+    <script src="UC.js"></script>
+  </head>
+  <body>
+    <div class="maindiv">
+      <select name="Unit1" id="unit1" onchange="dis()" onchange="calculate()">
+        <option value="none" selected>Select The Unit</option>
+        <option value="Mass">Mass</option>
+        <option value="Length">Length</option>
+      </select>
+      <div>
+        <input
+          id="input1"
+          oninput="calculate()"
+          type="number"
+          placeholder="Enter the value"
+        />
+
+        <select name="mass" class="a1" onchange="calculate()">
+          <option value="Gram">Gram</option>
+          <option value="micro-gram">micro-gram</option>
+          <option value="Mili-gram">Mili-gram</option>
+          <option value="Kilo-Gram">Kilo-Gram</option>
+          <option value="tonne">Tonne</option>
+          <option value="Pound">Pound</option>
+          <option value="Ounce">Ounce</option>
+        </select>
+        <select name="length" id="length1" onchange="calculate()">
+          <option value="Kilo-meter">Kilo-meter</option>
+          <option value="meter">meter</option>
+          <option value="Centi-meter">Centi-meter</option>
+          <option value="Mili-meter">Mili-meter</option>
+          <option value="Micro-Meter">Micro-Meter</option>
+          <option value="Nano-meter">Nano-meter</option>
+          <option value="Mile">Mile</option>
+          <option value="Foot">Foot</option>
+          <option value="Inch">Inch</option>
+          <option value="Nautical-mile">Nautical-mile</option>
+        </select>
+
+        <input
+          id="input2"
+          type="number"
+          placeholder="Enter the value"
+          oninput="calculate1()"
+        />
+
+        <select name="mass" class="a2" onchange="calculate()">
+          <option value="Gram">Gram</option>
+          <option value="micro-gram">micro-gram</option>
+          <option value="Mili-gram">Mili-gram</option>
+          <option value="Kilo-Gram">Kilo-Gram</option>
+          <option value="tonne">Tonne</option>
+          <option value="Pound">Pound</option>
+          <option value="Ounce">Ounce</option>
+        </select>
+        <select name="length" id="length2" onchange="calculate()">
+          <option value="Kilo-meter">Kilo-meter</option>
+          <option value="meter">meter</option>
+          <option value="Centi-meter">Centi-meter</option>
+          <option value="Mili-meter">Mili-meter</option>
+          <option value="Micro-Meter">Micro-Meter</option>
+          <option value="Nano-meter">Nano-meter</option>
+          <option value="Mile">Mile</option>
+          <option value="Foot">Foot</option>
+          <option value="Inch">Inch</option>
+          <option value="Nautical-mile">Nautical-mile</option>
+        </select>
+      </div>
+      <div></div>
+    </div>
+  </body>
+</html>
